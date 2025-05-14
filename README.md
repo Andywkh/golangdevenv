@@ -20,6 +20,12 @@ Develop **multiple Go projects that require different compiler versions** withou
 3. Running `use_go_version <version>` repoints `/usr/local/go` to that folder and updates your `$PATH` instantly.  
 4. Your current project is bind-mounted into `/workspace`, so Git operations (push/pull) work as usual with your host credentials.
 
+```bash
+# Try it yourself! Download + untar Go 1.23.2 straight into that folder
+wget -O - https://go.dev/dl/go1.23.2.linux-amd64.tar.gz | tar -xz --strip-components=1 -C /workspace/go1.23.2
+use_go_version <your_new_version>
+go version
+```
 ---
 
 ## Configurations 
