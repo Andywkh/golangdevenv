@@ -22,10 +22,13 @@ Develop **multiple Go projects that require different compiler versions** withou
 
 ```bash
 # Try it yourself! Download + untar Go 1.23.2 straight into that folder
+mkdir -p /workspace/go1.23.2
 wget -O - https://go.dev/dl/go1.23.2.linux-amd64.tar.gz | tar -xz --strip-components=1 -C /workspace/go1.23.2
-use_go_version <your_new_version>
+use_go_version go1.23.2
 go version
 ```
+Newer Go versions can be found at [official site]((https://go.dev/dl)) ( https://go.dev/dl/ )
+
 ---
 
 ## Configurations 
