@@ -1,0 +1,14 @@
+{
+  "name": "Golang Multi-Version Environment",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "platform": "linux/amd64",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "golang.Go"
+  ]
+}
